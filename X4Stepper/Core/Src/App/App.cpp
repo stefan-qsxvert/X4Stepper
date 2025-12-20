@@ -22,7 +22,8 @@ void App::prim(int i){
 
 void App::sec(){
 	HAL_GPIO_ReadPin( GPIOA, GPIO_PIN_7);
-
+	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_7, GPIO_PIN_SET);
+	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_7, GPIO_PIN_RESET);
 }
 
 //};
