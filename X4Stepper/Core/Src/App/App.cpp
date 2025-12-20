@@ -8,7 +8,7 @@
 #include <iostream>
 #include "App.hpp"
 #include "stm32f4xx_hal.h"
-
+#include "adc.h"
 
 //class App{
 
@@ -18,6 +18,10 @@
 
 void App::prim(int i){
 	 std::cout << "test" << std::endl;
+
+	 HAL_ADC_Start(&hadc1);                      // uruchom konwersję
+	 HAL_ADC_PollForConversion(&hadc1, 10);      // czekaj na zakończenie
+	 uint32_t value = HAL_ADC_GetValue(&hadc1);  // pobierz wynik
 }
 
 void App::sec(){
