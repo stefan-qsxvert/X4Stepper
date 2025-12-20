@@ -7,6 +7,8 @@
 
 #include <iostream>
 #include "App.hpp"
+#include "stm32f4xx_hal.h"
+
 
 //class App{
 
@@ -19,7 +21,7 @@ void App::prim(int i){
 }
 
 void App::sec(){
-//	HAL_
+	HAL_GPIO_ReadPin( GPIOA, GPIO_PIN_7);
 
 }
 
