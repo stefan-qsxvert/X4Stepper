@@ -17,6 +17,7 @@
   */
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
+
 #include "main.h"
 #include "gpio.h"
 #include "App/App.hpp"
@@ -103,6 +104,8 @@ int i = 1;
     /* USER CODE END WHILE */
 	  app->sec();
 	  app->prim(i);
+	  app->tst();
+
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */

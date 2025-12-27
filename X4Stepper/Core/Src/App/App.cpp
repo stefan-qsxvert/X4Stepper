@@ -22,11 +22,18 @@ void prim(int i){
 	 HAL_ADC_Start(&hadc1);                      // uruchom konwersję
 	 HAL_ADC_PollForConversion(&hadc1, 10);      // czekaj na zakończenie
 	 uint32_t value = HAL_ADC_GetValue(&hadc1);  // pobierz wynik
+
+
 }
 
 void sec(){
 	HAL_GPIO_ReadPin( GPIOA, GPIO_PIN_7);
 	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_7, GPIO_PIN_SET);
 	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_7, GPIO_PIN_RESET);
+}
+
+void tst(){
+	uint64_t t = HAL_GetTick();
+	std::cout << t;
 }
 
