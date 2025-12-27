@@ -69,8 +69,7 @@ App* app = new App();
 
 int i = 1;
 
-app->sec();
-app->prim(i);
+
 
   /* USER CODE END 1 */
 
@@ -98,10 +97,12 @@ app->prim(i);
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+
   while (1)
   {
     /* USER CODE END WHILE */
-
+	  app->sec();
+	  app->prim(i);
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
