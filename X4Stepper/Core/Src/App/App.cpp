@@ -35,5 +35,6 @@ void sec(){
 void tst(){
 	uint64_t t = HAL_GetTick();
 	std::cout << t;
+
 }
 
