@@ -14,9 +14,9 @@
 
 //public:
 
+App* app = new App();
 
-
-void App::prim(int i){
+void prim(int i){
 	 std::cout << "test" << std::endl;
 
 	 HAL_ADC_Start(&hadc1);                      // uruchom konwersję
@@ -24,10 +24,9 @@ void App::prim(int i){
 	 uint32_t value = HAL_ADC_GetValue(&hadc1);  // pobierz wynik
 }
 
-void App::sec(){
+void sec(){
 	HAL_GPIO_ReadPin( GPIOA, GPIO_PIN_7);
 	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_7, GPIO_PIN_SET);
 	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_7, GPIO_PIN_RESET);
 }
 
-//};
