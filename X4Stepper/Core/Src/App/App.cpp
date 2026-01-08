@@ -21,5 +21,8 @@ void App::sec(){
 void App::tst(){
 	uint64_t t = HAL_GetTick();
 	std::cout << t;
+}
 
+bool App::wait(){
+	return HAL_GetTick() >= 50;
 }

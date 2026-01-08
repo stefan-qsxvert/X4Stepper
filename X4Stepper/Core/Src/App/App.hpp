@@ -11,6 +11,6 @@ public:
 void prim(int i);
 void sec();
 void tst();
-
+bool wait();
 
 };
