@@ -1,8 +1,7 @@
-#include <iostream>
-#include "App.hpp"
-#include "stm32f4xx_hal.h"
-#include "adc.h"
+//#ifndef SRC_APP_CPP_
+//#define SRC_APP_CPP
 
+#include "App.hpp"
 
 void App::prim(int i){
 	 std::cout << "test" << std::endl;
@@ -23,6 +22,6 @@ void App::tst(){
 	std::cout << t;
 }
 
-bool App::wait(){
-	return HAL_GetTick() >= 50;
+bool App::wait(uint32_t i){
+    return HAL_GetTick() >= i;
 }
