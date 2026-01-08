@@ -1,20 +1,8 @@
-/*
- * App.cpp
- *
- *  Created on: 20 gru 2025
- *      Author: stefa
- */
-
 #include <iostream>
 #include "App.hpp"
 #include "stm32f4xx_hal.h"
 #include "adc.h"
 
-//class App{
-
-//public:
-
-App* app = new App();
 
 void prim(int i){
 	 std::cout << "test" << std::endl;
@@ -22,8 +10,6 @@ void prim(int i){
 	 HAL_ADC_Start(&hadc1);                      // uruchom konwersję
 	 HAL_ADC_PollForConversion(&hadc1, 10);      // czekaj na zakończenie
 	 uint32_t value = HAL_ADC_GetValue(&hadc1);  // pobierz wynik
-
-
 }
 
 void sec(){
@@ -37,4 +23,3 @@ void tst(){
 	std::cout << t;
 
 }
-

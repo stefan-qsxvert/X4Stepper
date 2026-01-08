@@ -101,10 +101,13 @@ int i = 1;
 
   while (1)
   {
-    /* USER CODE END WHILE */
-	  app->sec();
+
 	  app->prim(i);
-	  app->tst();
+
+    /* USER CODE END WHILE */
+//	  app->sec();
+//	  app->prim(i);
+//	  app->tst();
 
     /* USER CODE BEGIN 3 */
   }
