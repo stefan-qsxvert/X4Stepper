@@ -5,7 +5,6 @@
 #endif /* SRC_APP_HPP_ */
 
 #include <iostream>
-
 #include "stm32f4xx_hal.h"
 #include "adc.h"
 #include <cstdint>
@@ -18,5 +17,6 @@ void prim(int i);
 void sec();
 void tst();
 bool wait(uint32_t i);
+void run();
 
 };

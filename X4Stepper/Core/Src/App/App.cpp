@@ -3,6 +3,14 @@
 
 #include "App.hpp"
 
+void App::run(){
+	HAL_ADC_Start(&hadc1);
+//	App* app = new App();
+	if (App::wait(500)){
+		std::cout << HAL_GetTick();
+	}
+}
+
 void App::prim(int i){
 	 std::cout << "test" << std::endl;
 
