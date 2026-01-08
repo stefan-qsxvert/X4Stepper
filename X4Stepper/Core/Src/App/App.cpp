@@ -4,7 +4,7 @@
 #include "adc.h"
 
 
-void prim(int i){
+void App::prim(int i){
 	 std::cout << "test" << std::endl;
 
 	 HAL_ADC_Start(&hadc1);                      // uruchom konwersję
@@ -12,13 +12,13 @@ void prim(int i){
 	 uint32_t value = HAL_ADC_GetValue(&hadc1);  // pobierz wynik
 }
 
-void sec(){
+void App::sec(){
 	HAL_GPIO_ReadPin( GPIOA, GPIO_PIN_7);
 	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_7, GPIO_PIN_SET);
 	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_7, GPIO_PIN_RESET);
 }
 
-void tst(){
+void App::tst(){
 	uint64_t t = HAL_GetTick();
 	std::cout << t;
 
