@@ -102,7 +102,7 @@ int i = 1;
   while (1)
   {
 
-	  app->prim(i);
+	  app->run();
 
     /* USER CODE END WHILE */
 //	  app->sec();
