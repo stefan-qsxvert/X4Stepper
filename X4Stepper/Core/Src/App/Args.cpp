@@ -1,13 +1,8 @@
 
 #include <cstdint>
 #include <iostream>
+#include "Args.hpp"
 
-private:
-	uint32_t ADCWait;
-
-
-
-public:
-	uint32_t getADCWait(){
+	uint32_t Args::getADCWait(){
 		return ADCWait;
 	}
