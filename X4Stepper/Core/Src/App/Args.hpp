@@ -9,7 +9,7 @@ private:
 public:
 
 	uint32_t getADCWait();
-
+	void setADCWait(uint32_t v);
 
 
 

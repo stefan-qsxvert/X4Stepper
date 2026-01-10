@@ -6,3 +6,7 @@
 	uint32_t Args::getADCWait(){
 		return ADCWait;
 	}
+
+	void Args::setADCWait(uint32_t v){
+		ADCWait = v;
+	}
