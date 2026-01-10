@@ -4,7 +4,7 @@
 
 #endif /* SRC_APP_HPP_ */
 
-#pragma once;
+#pragma once
 
 #include <iostream>
 #include "stm32f4xx_hal.h"

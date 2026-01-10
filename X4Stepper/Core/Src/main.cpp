@@ -20,7 +20,7 @@
 
 #include "main.h"
 #include "gpio.h"
-#include "App/App.hpp"
+//#include "App/App.hpp"
 #include "gpio.h"
 #include "App/Args.hpp"
 
@@ -28,6 +28,7 @@
 void SystemClock_Config(void);
 
 Args* rgs = new Args();
+
 
 
 int main(void)
