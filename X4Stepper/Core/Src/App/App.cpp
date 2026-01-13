@@ -1,5 +1,6 @@
 #include "Args.hpp"
 #include <iostream>
+#include <cstdint>
 
 class App{
 
@@ -11,6 +12,9 @@ public:
 	};
 
 void run(){
+	args.setADCWait(1024);
+	uint32_t v =  args.getADCWait();
+//	std::cout << v;
 
 };
 
