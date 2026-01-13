@@ -14,7 +14,7 @@ public:
 void run(){
 	args.setADCWait(1024);
 	uint32_t v =  args.getADCWait();
-//	std::cout << v;
+	std::cout << v;
 
 };
 
