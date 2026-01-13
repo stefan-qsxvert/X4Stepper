@@ -15,15 +15,9 @@ private:
 Args* args;
 
 public:
-
 	App(Args* args_){
 		args = args_;
 	}
-
-//void prim(int i);
-//void sec();
-//void tst();
-//bool wait(uint32_t i);
 
 void run();
 
