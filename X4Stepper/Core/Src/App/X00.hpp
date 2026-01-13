@@ -1,17 +1,6 @@
-
-#ifndef SRC_APP_HPP_
-#define SRC_APP_HPP
-
-#endif
-
-#pragma once
-
-#include <iostream>
-
-
 #include <cstdint>
 
-class App{
+class X00{
 
 public:
 
