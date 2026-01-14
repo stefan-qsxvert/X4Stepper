@@ -10,7 +10,6 @@ public:
 		args = args_;
 	}
 
-
 void prim(int i);
 void sec();
 void tst();
